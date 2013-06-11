@@ -31,7 +31,7 @@ function validaLLenado(obj){
 	if(obj.val()==""){
 	obj.val(""+num[p]);
 	if(num[p]==num.length){
-	obj.css("background","black");
+	obj.addClass("zero");
 	obj.val("0");
 	}
 	p++;
