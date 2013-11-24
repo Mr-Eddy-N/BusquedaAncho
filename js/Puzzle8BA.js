@@ -4,14 +4,14 @@ $(document).ready(function(){
 	$("#nTabla").change(function(){
 		num.length=0;
 		p=0;
-		var tam=$("#nTabla").val();
+		tam=$("#nTabla").val();
 		var tabla="";
 		var count=1;
 		for(var r=0;r<tam;r++)
 		{ tabla +="<tr id="+r+">";
 			for (var c=0;c<tam;c++)
 			{
-				tabla+="<td id="+r+""+c+"> <input class='ine'/></td>"
+				tabla+="<td id="+r+""+c+"> <input class='ine'/></td>";
 				num.push(count);
 				count++;
 			}
@@ -29,16 +29,16 @@ $(document).ready(function(){
 });
 function validaLLenado(obj){
 	if(obj.val()==""){
-	obj.val(""+num[p]);
-	if(num[p]==num.length){
-	obj.addClass("zero");
-	obj.val("0");
-	}
+		obj.val(""+num[p]);
+		if(num[p]==num.length){
+			obj.addClass("zero");
+			obj.val("0");
+		}
 	p++;
 	}
 	else
 	{
-	 alert("no puedes hacer esto")
+	 alert("no puedes hacer esto");
 	}
 	
 }
@@ -56,3 +56,22 @@ function localizaCero(){
 	$(".ine ")
 }
 
+function isMovable(Dir)
+{ 
+	var r =cadena.substr(0,1);
+	var c =cadena.substr(1,2);
+	cosC=c/tam;
+	cosR=c/tam;
+
+
+    switch(dir){
+
+        case "D":
+          if(cosC==0)
+
+        break
+
+
+    }
+
+}
