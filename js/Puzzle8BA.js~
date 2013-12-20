@@ -91,7 +91,8 @@ function validaResultado(format)//recibe un arreglo con el formato de el resulta
 	count++;
       else
 	return false;
-    }   
+    }
+      
   }
   return true;
 }
